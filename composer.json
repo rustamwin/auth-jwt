@@ -1,32 +1,40 @@
 {
-    "name": "yiisoft/_____",
+    "name": "yiisoft/auth-jwt",
     "type": "library",
-    "description": "_____",
-    "keywords": ["_____"],
+    "description": "Yii JWT Auth support",
+    "keywords": ["auth", "jwt", "middleware"],
     "homepage": "http://www.yiiframework.com/",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/yiisoft/_____/issues?state=open",
+        "issues": "https://github.com/yiisoft/auth-jwt/issues?state=open",
         "forum": "http://www.yiiframework.com/forum/",
         "wiki": "http://www.yiiframework.com/wiki/",
         "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/yiisoft/_____"
+        "source": "https://github.com/yiisoft/auth-jwt"
     },
+    "minimum-stability": "dev",
     "require": {
-        "php": "^7.2"
+        "php": "^7.4",
+        "yiisoft/auth": "3.0.x-dev",
+        "web-token/jwt-checker": "~1.0",
+        "web-token/jwt-signature": "~1.0",
+        "web-token/jwt-signature-algorithm-hmac": "~1.0",
+        "web-token/jwt-signature-algorithm-ecdsa": "~1.0",
+        "web-token/jwt-signature-algorithm-rsa": "~1.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^8.2",
+        "hiqdev/composer-config-plugin": "^1.0@dev",
+        "phpunit/phpunit": "^8.4",
         "phan/phan": "^2.2"
     },
     "autoload": {
         "psr-4": {
-            "Yiisoft\\_____\\": "src"
+            "Yiisoft\\AuthJwt\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Yiisoft\\_____\\Tests\\": "tests"
+            "Yiisoft\\AuthJwt\\Tests\\": "tests"
         }
     },
     "extra": {
